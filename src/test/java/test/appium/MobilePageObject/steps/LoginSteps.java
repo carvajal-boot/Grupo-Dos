@@ -18,7 +18,7 @@ public class LoginSteps {
 	}
 	
 	@Step
-	public void loguinConUsuarioYContrasena(String usuario, String contrasena) {
+	public void loguinConUsuarioYContrasena(String usuario, String contrasena) throws InterruptedException {
 		Serenity.takeScreenshot();
 		loginPageObjects.ingresarUsuario(usuario);
 		loginPageObjects.ingresarContrasena(contrasena);
@@ -33,5 +33,10 @@ public class LoginSteps {
 		Serenity.takeScreenshot();
 		
 	}
+	@Step
+	public void extraer() {
+		loginPageObjects.extraer();
+	}
+
 
 }

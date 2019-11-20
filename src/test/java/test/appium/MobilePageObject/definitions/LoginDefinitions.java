@@ -20,8 +20,10 @@ public class LoginDefinitions {
 
 
 	@When("^ingreso usuario \"([^\"]*)\" y contrasena \"([^\"]*)\"$")
-	public void ingresoUsuarioYContrasena(String usuario, String contrasena) {
+	public void ingresoUsuarioYContrasena(String usuario, String contrasena) throws InterruptedException {
 		loginSteps.loguinConUsuarioYContrasena(usuario,contrasena);
+		//loginSteps.extraer();
+		
 	}
 
 	@Then("^valido ingreso a la aplicacion \"([^\"]*)\"$")

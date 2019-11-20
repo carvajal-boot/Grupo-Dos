@@ -1,4 +1,5 @@
-#Author: David Cardenas Guzman
+#Author: grupo Dos
+#Camilo Carvajal, Michael Niño, Yhon Layton, Edwin Paez, Juan Olivares
 
 @login
 Feature: prueba de ingreso a la app
